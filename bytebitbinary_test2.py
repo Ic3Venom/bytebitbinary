@@ -19,7 +19,7 @@ def primes(maxRange):
     return primes
 
 def main():
-    size = 11
+    size = raw_input("What length/width do you want your canvas to be?")
     img = Image.new('RGB', (size,size), (240, 240, 240))
     pixels = img.load()
     prime = primes(size*size)
